@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                    'sm': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                    },
+            
+            extend: { 
+              colors: {
+                clifford: '#da373d',
+                navlinkbg:"#f2f4f7",
+                navbuttonbg:"#00baf2",
+                navbuttonhoverbg:"#002970",
+                walletbg:"#eeeff1",
+                billsectionbg:"#00baf2",
+                billsectionhoverbg:"#00afe3"
+
+              }
+            }
+          }
+        }
+      </script>
+    <title>Paytm Clone</title>
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+<body class="font-inter">
+    <!-- navigation-bar -->
+    <div class="w-full shadow-lg">
+        <div class=" w-11/12 mx-auto  flex flex-row justify-between items-center h-24">
+            <div class="visible lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div>
+                <img src="/Images/paytm_logo.png" alt="" class="w-36 lg:w-44 xl:w-48 cursor-pointer">
+            </div>
+            <div class="relative -left-8">
+                <ul class="flex flex-row gap-6 cursor-pointer">
+                    <li class=" hidden lg:block font-semibold lg:text-sm xl:text-lg  px-5 py-2 hover:bg-navlinkbg">Paytm For Consumer</li>
+                    <li class="hidden lg:block font-semibold lg:text-sm xl:text-lg  px-5 py-2 hover:bg-navlinkbg">Paytm For Business</li>
+                    <li class="hidden lg:block font-semibold lg:text-sm xl:text-lg  px-5 py-2 hover:bg-navlinkbg">Company</li>
+                    <li class="hidden lg:block font-semibold lg:text-sm xl:text-lg px-5 py-2 hover:bg-navlinkbg">Investors Relations</li>
+                    <li class="hidden lg:block font-semibold lg:text-sm xl:text-lg   px-5 py-2 hover:bg-navlinkbg">Career</li>
+                </ul>
+            </div>
+            <div>
+                <button class=" px-7 py-1 rounded-2xl  text-white bg-navbuttonbg hover:bg-navbuttonhoverbg text-lg text-left ">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-walletbg h-12  flex justify-center items-center">
+        <h2 class="  font-normal sm:text-sm lg:text-base xl:text-lg" ><span class="font-bold"> No Wallet KYC Required </span> &#128522
+            to pay using UPI on Paytm. <a href="#" class="font-bold">Learn more.</a></h2>
+    </div>
+     
+
+   <!-- hero-section -->
+   <div class="h-screen bg-white flex items-center">
+        <div class="flex  flex-row-reverse md:flex-row md:justify-between md:items-center ml-20">
+            <div class="-mt-32 text-center md:text-left md:mt-0 ">
+                <img src="/Images/heroleftimage.png" alt="" class="mb-9 mx-auto md:mx-0 md:w-20 md:mb-9 xl:w-28 xl:mb-9">
+                <h1 class="font-bold text-3xl  md:text-5xl xl:text-6xl md:mt-5 md:mb-10">India's Most loved <br> Payments App</h1>
+                <h3 class="font-medium text-[15px] md:text-[15px] xl:text-[20px] mt-5 mb-5 md:mb-5">Recharge & pay bills, book flights & movie tickets, <br> open a savings account, invest in stocks & mutual <br> funds, and do a lot more.
+                </h3>
+                <button class=" px-2 py-2 mt-5 md:px-16 md:py-2 rounded-full text-white bg-black hover:bg-white hover:text-black md:mt-5 hover:border-black">Download Paytm App <i class="fa-brands fa-apple mx-4"></i> <i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class=" absolute right-0  ">
+
+                <img src="/Images/herorightimage.webp" alt="" class=" md:w-[450px] xl:w-[600px] mt-96  md:mt-0">
+            </div>
+        </div>
+
+   </div>
+
+   <!-- bill section on paytm -->
+  <div class="  h-[450px] mt-10  bg-billsectionbg">
+    <h2 class="text-white text-[45px] font-normal relative top-10 ml-10">Recharge & Pay Bills on Paytm.</h2>
+    <div class=" flex flex-row flex-shrink  justify-around items-center relative top-16 h-[250px] w-11/12 mx-auto ">
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="/Images/billone.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">Recharge</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Prepaid</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Mobile <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="/Images/billtwo.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">Pay</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Rent</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Payment <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="Images/billthree.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">Pay</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Electricity</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Bill <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="/Images/billfour.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">Recharge</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">DTH</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Connection <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="/Images/billfive.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">Book</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Gas</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Cylinder <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="Images/billsix.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">Pay</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Credit</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Card Bill <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div class=" w-[180px] h-[200px] cursor-pointer hover:bg-billsectionhoverbg rounded-md">
+            <img src="/Images/billseven.png" alt="" class="w-[80px] ml-5">
+            <p class="text-white mt-4 text-lg font-medium ml-5">All</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Payment</p>
+            <p class="text-white mt-1 text-lg font-bold ml-5">Services <i class="fa-solid fa-angle-right"></i></p>
+        </div>
+       
+
+    </div>
+  </div>
+</body>
+</html>
